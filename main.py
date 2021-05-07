@@ -18,6 +18,10 @@ def set_symbols():      # create string of symbols
     if "4" in set_1:
         result += numbers
     
+    if set_1 == {}:  # if input is empthy return None
+        print("input is empthy")
+        return None
+
     return result
 
 def password_generator(symbols):
@@ -29,6 +33,9 @@ def password_generator(symbols):
     
     return result
 
-set_symbols = set_symbols()
-passwd = password_generator(set_symbols)
-print(passwd)
+set_symbols = set_symbols() 
+if set_symbols != None:
+    passwd = password_generator(set_symbols)
+    print(passwd)
+else:
+    print("i can't generate password without symbols")
