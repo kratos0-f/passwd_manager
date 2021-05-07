@@ -1,0 +1,9 @@
+password generator
+    four groups of characters
+        1) capitalized letter
+        2) lower case 
+        3) speсial characters 
+        4) numbers
+    five parameters
+        turning on groups of characters
+        number characters
